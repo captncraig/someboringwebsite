@@ -1,0 +1,34 @@
+# Site settings
+baseurl = "https://blog.captncraig.io/"
+languageCode = "en-us"
+title = "Craig wrote something!"
+theme = "hugo-steam-theme"
+paginate = 10
+
+[params]
+	title = "Craig Say's So"
+	subtitle = "That's why"
+	copyright = "Released under the MIT license."
+
+	# You can choose between green, orange, red and blue.
+	themeColor = "green"
+
+	# To provide some metadata for search engines and the about section in the footer
+	# feel free to add a few information about you and your website.
+	name = "Craig Peterson"
+	bio = "I'm Craig. I write code at stack overflow and I write about stuff here."
+	description = "I wrote some stuff!"
+	twitter = "captncraig" # optional
+	github = "captncraig" # optional
+
+	# Enable a comment system
+	# You can choose between Disqus or Google Plus by setting comments
+	# to disqus or googleplus. For using Disqus you need to enter your
+	# shortname in disqusShortname at the top of the configs. 
+	#comments = "disqus"
+
+	# Customize or translate the strings
+	keepReadingStr = "Keep reading"
+	backtotopStr = "Back to top"
+	shareStr = "Share"
+	pageNotFoundTitle = "404 - Page not found"
