@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://blog.captncraig.io/"
+baseurl = "http://blog.captncraig.io/"
 languageCode = "en-us"
 title = "Craig wrote something!"
 theme = "hugo-steam-theme"
