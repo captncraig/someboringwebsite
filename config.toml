@@ -20,7 +20,8 @@ paginate = 10
 	description = "I wrote some stuff!"
 	twitter = "captncraig" # optional
 	github = "captncraig" # optional
-
+ 
+	googleAnalytics = "UA-65195902-3"
 	# Enable a comment system
 	# You can choose between Disqus or Google Plus by setting comments
 	# to disqus or googleplus. For using Disqus you need to enter your

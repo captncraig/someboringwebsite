@@ -12,7 +12,7 @@ tags = [
 I am pretty infatuated with [mholt](https://github.com/mholt)'s new webserver, [caddy](http://caddyserver.com). I've been using it to host a variety of thing on my own server (including this new fancy blog), and found it all around easier to configure and use. It also has a ton of cool features built in:
 
 - [Magical](https://www.youtube.com/watch?v=nk4EWHvvZtI), Automatic TLS certificates with Let's Encrypt.
-- Simple config file format.
+- Simple config file format. No magic.
 - [git plugin](http://caddyserver.com/docs/git) Allows for automatic deployment on git hooks (more about this in another post maybe).
 - Good enough performance. Not battle hardened, but benchmarks are comperable to nginx for basic things.
 - Static content serving or dynamic proxying.
@@ -95,3 +95,27 @@ logs.captncraig.io {
 ```
 
 With that I have a nice graphical way to browse logs remotely in my browser. I wouldn't do that on a system where I care about security, but it is pretty nice for my toy stuff.
+
+# 4. Custom build / plugins
+
+One thing that kinda sucks about go programs is the lack of any ability to load code at runtime.
+
+Caddy has a rather novel way of loading plugins, but it requires actually changing the caddy source and recompiling. There is a pretty good tool to automate this: [caddyext](https://github.com/caddyserver/caddyext). I run this little script to build caddy from tip with the git extension as well.
+
+```
+export GOPATH=/opt/gopath
+export PATH=/opt/gopath/bin:$PATH
+go get -v -u github.com/mholt/caddy
+go get -v -u github.com/abiosoft/caddy-git
+go get -v -u github.com/caddyserver/caddyext
+caddyext install git github.com/abiosoft/caddy-git
+go install github.com/mholt/caddy
+```
+
+You can of course add as many extensions as you like this way.
+
+# that's it!
+
+It seems like a lot, but it is really not so much. If there was a simple debian package it might be easier, but that doesn't exist (yet). This gives me a ton of power and flexibility, and is also a pretty good framework for running any app under systemd. 
+
+Special thanks to [@luitdv](https://twitter.com/luitvd) for help with some of the trickier bits of systemd and caddy. Hope it helps!
