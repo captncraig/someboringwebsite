@@ -2,7 +2,6 @@
 date = "2015-12-03T10:11:21-07:00"
 description = "Why and how I dropped nginx for caddy."
 title = "Deploying Caddy"
-draft = true
 tags = [
     "caddy",
     "deployment",
