@@ -4,7 +4,6 @@ languageCode = "en-us"
 title = "Craig wrote something!"
 theme = "hugo-steam-theme"
 paginate = 10
-#disqusShortname = "spf13"
 
 [params]
 	title = "Craig Say's So"
