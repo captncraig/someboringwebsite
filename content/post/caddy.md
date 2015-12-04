@@ -19,4 +19,9 @@ I am pretty infatuated with [mholt](https://github.com/mholt)'s new webserver, [
 - Tons of cool [plugins](https://caddyserver.com/docs).
 - Super easy extensibility (in Go!).
 
-In the slack room, one question that comes up pretty much every day is "how do I daemonize and run this thing?"
+In the slack room, one question that comes up pretty much every day is "how do I daemonize and run this thing?" To me this means two things:
+
+1. It must start when the system starts.
+2. It must restart if it crashes.
+
+
