@@ -16,18 +16,12 @@ paginate = 10
 	# To provide some metadata for search engines and the about section in the footer
 	# feel free to add a few information about you and your website.
 	name = "Craig Peterson"
-	bio = "I'm Craig. I write code at stack overflow and I write about stuff here. I have more little girls than I can count."
+	bio = "I'm Craig. I write code at stack overflow and I write about stuff here. I have more little girls than most people, and ."
 	description = "I wrote some stuff!"
 	twitter = "captncraig" # optional
 	github = "captncraig" # optional
  
 	googleAnalytics = "UA-65195902-3"
-	
-	# Enable a comment system
-	# You can choose between Disqus or Google Plus by setting comments
-	# to disqus or googleplus. For using Disqus you need to enter your
-	# shortname in disqusShortname at the top of the configs. 
-	#comments = "disqus"
 
 	# Customize or translate the strings
 	keepReadingStr = "Keep reading"
